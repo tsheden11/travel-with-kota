@@ -1,0 +1,15 @@
+{
+  "name": "travel-with-kota",
+  "version": "1.0.0",
+  "description": "Travel agency website with Airtable CMS",
+  "scripts": {
+    "sync": "node scripts/sync-airtable.js",
+    "test": "echo \"No tests specified\""
+  },
+  "dependencies": {
+    "airtable": "^0.12.2"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
