@@ -20,13 +20,13 @@ navigation:
   - title: Home
     url: /
   - title: Destinations
-    url: /destinations/
+    url: /destinations
   - title: Packages
-    url: /packages/
+    url: /packages
   - title: About
-    url: /about/
+    url: /about
   - title: Contact
-    url: /contact/
+    url: /contact
 
 # Contact info
 email: info@travelwithkota.com
