@@ -1,0 +1,11 @@
+- name: "Paris, France"
+  image: "/assets/images/paris.jpg"
+  description: "City of Light and romance"
+  price: "$1,299"
+  duration: "7 days"
+
+- name: "Tokyo, Japan"
+  image: "/assets/images/tokyo.jpg"
+  description: "Modern metropolis meets ancient culture"
+  price: "$1,899"
+  duration: "10 days"
