@@ -1,34 +1,53 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <title>{{ page.title }} - {{ site.title }}</title>
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-  </head>
-  <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title | default: "Travel with Kota" }}</title>
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}Discover the magical kingdom of Bhutan with Travel with Kota. Authentic experiences, cultural immersion, and unforgettable adventures await.{% endif %}">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+</head>
+<body>
     <header>
-      <nav class="navbar">
-        <div class="container">
-          <a href="{{ '/' | relative_url }}" class="navbar-brand">{{ site.title }}</a>
-          <ul class="navbar-nav">
-            {% for item in site.navigation %}
-              <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
-            {% endfor %}
-          </ul>
-        </div>
-      </nav>
+        <nav>
+            <a href="/" class="logo">Travel with Kota</a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/destinations">Destinations</a></li>
+                <li><a href="/packages">Packages</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-      {{ content }}
+        {{ content }}
     </main>
 
     <footer>
-      <div class="container">
-        <p>&copy; 2024 {{ site.title }}. All rights reserved.</p>
-        <p>{{ site.email }} | {{ site.phone }}</p>
-      </div>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="/destinations">Destinations</a>
+                <a href="/packages">Tour Packages</a>
+                <a href="/about">About Us</a>
+                <a href="/contact">Contact</a>
+            </div>
+            <p>&copy; {{ 'now' | date: "%Y" }} Travel with Kota. Discover Bhutan with us.</p>
+        </div>
     </footer>
-  </body>
+
+    <script>
+        // Simple fade-in animation for cards
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.destination-card, .package-card');
+            cards.forEach((card, index) => {
+                setTimeout(() => {
+                    card.classList.add('fade-in');
+                }, index * 100);
+            });
+        });
+    </script>
+</body>
 </html>
