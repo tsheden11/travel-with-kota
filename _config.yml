@@ -1,16 +1,19 @@
 # Site settings
-title: "YourTravel Agency"
+title: "Travel with Kota"
 description: "Discover amazing destinations with us"
-url: "https://yourusername.github.io"
-baseurl: ""
+url: "https://tsheden11.github.io"
+baseurl: "/travel-with-kota"
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
+theme: jekyll-theme-primer
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-theme-primer
 
 # Navigation
 navigation:
@@ -26,12 +29,11 @@ navigation:
     url: /contact/
 
 # Contact info
-email: info@youragency.com
-phone: "+1 234 567 8900"
-address: "123 Travel St, City, State"
+email: info@travelwithkota.com
+phone: "+975 123 456 789"
+address: "Thimphu, Bhutan"
 
 # Social media
 social:
-  facebook: youragency
-  instagram: youragency
-  twitter: youragency
+  facebook: travelwithkota
+  instagram: travelwithkota

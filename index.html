@@ -1,16 +1,38 @@
 ---
 layout: default
+title: Home
 ---
 
-<section class="hero">
+<div class="hero">
   <div class="hero-content">
-    <h1>Discover Your Next Adventure</h1>
-    <p>Expert travel planning for unforgettable experiences</p>
-    <a href="/destinations/" class="btn-primary">Explore Destinations</a>
+    <h1>Discover Bhutan with Us</h1>
+    <p>Expert travel planning for unforgettable experiences in the Land of the Thunder Dragon</p>
+    <a href="{{ '/destinations/' | relative_url }}" class="btn-primary">Explore Destinations</a>
   </div>
-</section>
+</div>
 
-<section class="featured-destinations">
-  <h2>Popular Destinations</h2>
-  <!-- Destination cards here -->
-</section>
+<div class="container">
+  <section class="featured-destinations">
+    <h2>Why Choose Travel with Kota?</h2>
+    <div class="destination-grid">
+      <div class="destination-card">
+        <h3>🏔️ Mountain Adventures</h3>
+        <p>Experience the breathtaking Himalayan landscapes and pristine mountain trails.</p>
+      </div>
+      <div class="destination-card">
+        <h3>🏛️ Cultural Heritage</h3>
+        <p>Explore ancient monasteries, dzongs, and immerse in Bhutanese culture.</p>
+      </div>
+      <div class="destination-card">
+        <h3>🌱 Sustainable Tourism</h3>
+        <p>Travel responsibly while supporting local communities and conservation efforts.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-preview">
+    <h2>About Travel with Kota</h2>
+    <p>We are a locally-owned travel agency specializing in authentic Bhutanese experiences. Our expert guides and carefully crafted itineraries ensure you discover the true essence of Bhutan - from its stunning landscapes to its rich Buddhist culture.</p>
+    <a href="{{ '/about/' | relative_url }}" class="btn-primary">Learn More</a>
+  </section>
+</div>
