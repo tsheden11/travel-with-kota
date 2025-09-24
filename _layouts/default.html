@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title | default: "Travel with Kota" }}</title>
     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}Discover the magical kingdom of Bhutan with Travel with Kota. Authentic experiences, cultural immersion, and unforgettable adventures await.{% endif %}">
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
     <link rel="canonical" href="{{ page.url | absolute_url }}">
 </head>
 <body>
     <header>
         <nav>
-            <a href="/" class="logo">Travel with Kota</a>
+            <a href="{{ '/' | relative_url }}" class="logo">Travel with Kota</a>
             <ul class="nav-links">
-                <li><a href="/">Home</a></li>
-                <li><a href="/destinations">Destinations</a></li>
-                <li><a href="/packages">Packages</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/contact">Contact</a></li>
+                <li><a href="{{ '/' | relative_url }}">Home</a></li>
+                <li><a href="{{ '/destinations' | relative_url }}">Destinations</a></li>
+                <li><a href="{{ '/packages' | relative_url }}">Packages</a></li>
+                <li><a href="{{ '/about' | relative_url }}">About</a></li>
+                <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -29,10 +29,10 @@
     <footer>
         <div class="footer-content">
             <div class="footer-links">
-                <a href="/destinations">Destinations</a>
-                <a href="/packages">Tour Packages</a>
-                <a href="/about">About Us</a>
-                <a href="/contact">Contact</a>
+                <a href="{{ '/destinations' | relative_url }}">Destinations</a>
+                <a href="{{ '/packages' | relative_url }}">Tour Packages</a>
+                <a href="{{ '/about' | relative_url }}">About Us</a>
+                <a href="{{ '/contact' | relative_url }}">Contact</a>
             </div>
             <p>&copy; {{ 'now' | date: "%Y" }} Travel with Kota. Discover Bhutan with us.</p>
         </div>
